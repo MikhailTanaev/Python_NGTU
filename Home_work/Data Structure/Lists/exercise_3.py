@@ -7,7 +7,7 @@
 import random
 
 randomList = []
-# в цикле 10 раз генерируем случайное число в диапазоне от 1 до 10
+# в цикле 50 раз генерируем случайное число в диапазоне от 1 до 20
 for i in range(50):
     randomList.append(random.randint(1, 20))
 print('Случайный список:', randomList)
