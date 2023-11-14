@@ -20,4 +20,4 @@ if 20 in randomList:
 else:
     print('20-ти нет в списке')
 # выводим обновленный список
-print(randomList)
+print('Обновленный список:', randomList)
