@@ -7,19 +7,22 @@
 
 import random
 
+# создаем список
 userList = []
+# в цикле добавляем в него 3 значения
 for i in range(3):
      userList.append(int(input('Введите целое число от 0 до 1000: ')))
 
 print('Список пользователя',userList)
-
+# создаем список
 compList = []
+# в цикле добавляем в него 2 значения
 for i in range(2):
     compList.append(random.randint(1, 100))
 print('Список компьютера',compList)
-
+# сортируем список для дальнейших вычислений
 compList.sort()
-
+# в цикле смотрим по всем элементам не попадают ли они в заданный компьютером диапазон
 for elem in userList:
     if elem >= compList[0] and elem <= compList[1]:
         print('Число', elem, 'входит в диапазон')
