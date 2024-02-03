@@ -15,8 +15,8 @@ def get_total_price(order):
     total_price = 0
     # Проходим по всем строкам в файлы
     for item in lines:
-        # разбиваем их по пробелу, берем второй элемент (цену) и суммируем с итоговой ценой
-        total_price += float(item.split('\t')[2])
+        # разбиваем их по пробелу, берем второй элемент (цену), умножаем на первый (количество) и суммируем с итоговой ценой
+        total_price += float(item.split('\t')[2]) * int(item.split('\t')[1])
 
     return total_price
 
